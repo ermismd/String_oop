@@ -26,7 +26,7 @@ public class String {
 	 * 
 	 */
 	public char[] getCharacters() {
-		return characters;
+		return characters.clone();
 	}
 
 	/**
@@ -39,7 +39,7 @@ public class String {
 	}
 	
 	/**
-	 * @pre|index>0&&index<= getLength()
+	 * @pre|index>=0&&index<= getLength()
 	 * 
 	 * @inspects|this
 	 * 
@@ -60,7 +60,7 @@ public class String {
 	 * @post|Arrays.equals(getCharacters(),characters)
 	 */
 	public String(char[] characters) {
-		throw new RuntimeException("not yet impl");
+		this.characters=characters.clone();
 	}
 	
 	
