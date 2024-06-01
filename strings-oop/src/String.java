@@ -12,6 +12,12 @@ import java.util.Arrays;
  */
 public class String {
 	
+	/**
+	 * @representationObject
+	 * 
+	 */
+	private char[] characters;
+	
 	
 	/**
 	 * 
@@ -20,7 +26,7 @@ public class String {
 	 * 
 	 */
 	public char[] getCharacters() {
-		throw new RuntimeException("Not yet implemented");
+		return characters;
 	}
 
 	/**
@@ -29,7 +35,7 @@ public class String {
 	 * 
 	 */
 	public int getLength() {
-		throw new RuntimeException("Not yet impl");
+		return characters.length;
 	}
 	
 	/**
@@ -41,7 +47,7 @@ public class String {
 	 * 
 	 */
 	public char getCharacterAt(int index) {
-		throw new RuntimeException("Not yet implemented");
+		return characters[index];
 	}
 	
 	
